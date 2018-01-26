@@ -3,7 +3,7 @@ require 'pry'
 def second_supply_for_fourth_of_july(holiday_hash)
   # given that holiday_hash looks like this:
   # {
-  #   :winter => {
+  #   :winter => { #this whole thing is holidays
   #     :christmas => ["Lights", "Wreath"],
   #     :new_years => ["Party Hats"]
   #   },
@@ -77,9 +77,14 @@ def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
 
-  bbq_array = []
+bbq_array = []
 holiday_hash.each do |season, holidays|
-  
+  holidays.each do |holiday, stuff|
+    if stuff == "BBQ"
+      bbq_array << holiday
+    end
+  end 
+
 end
 bbq_array
 
