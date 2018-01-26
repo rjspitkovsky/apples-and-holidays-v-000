@@ -67,7 +67,7 @@ holiday_hash.each do |season, holidays|
       end
       #correct_holiday = holiday_array.join(" ")
 
-      puts ("  ") + correct_holiday.join + ": " + stuff.join(", ")
+      puts ("  ") + correct_holiday.join(" ") + ": " + stuff.join(", ")
 
     end
   end
