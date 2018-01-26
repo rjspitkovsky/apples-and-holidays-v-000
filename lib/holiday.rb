@@ -66,7 +66,7 @@ holiday_hash.each do |season, holidays|
       new_holiday.each do |word|
         holiday_array << word.capitalize
       end
-      correct_holiday = holiday_array.join
+      correct_holiday = holiday_array.join(" ")
 
       puts ("  ") + correct_holiday + ": " + stuff.join(", ")
 
