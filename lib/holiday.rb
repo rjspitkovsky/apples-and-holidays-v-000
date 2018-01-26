@@ -61,7 +61,7 @@ holiday_hash.each do |season, holidays|
   puts season.to_s.capitalize! + ":"
     holidays.each do |holiday, stuff|
       string_holiday = holiday.to_s
-      new_holiday = string_holiday.split
+      new_holiday = string_holiday.split("_")
       correct_holiday = new_holiday.map do |word|
         word.capitalize
       end
