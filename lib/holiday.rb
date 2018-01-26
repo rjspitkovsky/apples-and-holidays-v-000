@@ -62,13 +62,12 @@ holiday_hash.each do |season, holidays|
     holidays.each do |holiday, stuff|
       string_holiday = holiday.to_s
       new_holiday = string_holiday.split
-      holiday_array = []
-      new_holiday.each do |word|
-        holiday_array << word.capitalize
+      correct_holiday = new_holiday.map do |word|
+        word.capitalize
       end
-      correct_holiday = holiday_array.join(" ")
+      #correct_holiday = holiday_array.join(" ")
 
-      puts ("  ") + correct_holiday + ": " + stuff.join(", ")
+      puts ("  ") + correct_holiday.join + ": " + stuff.join(", ")
 
     end
   end
