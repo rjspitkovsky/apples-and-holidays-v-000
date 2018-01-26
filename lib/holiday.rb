@@ -84,7 +84,6 @@ holiday_hash.each do |season, holidays|
         bbq_array << holiday
       end
     end
-  end
 end
 bbq_array
 
