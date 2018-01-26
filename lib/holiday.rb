@@ -82,9 +82,10 @@ holiday_hash.each do |season, holidays|
   holidays.each do |holiday, stuffs|
     stuffs.each do |stuff|
       if stuff == "BBQ"
-        bbq_array << holiday 
+        bbq_array << holiday
     end
-  end 
+  end
+end 
 
 end
 bbq_array
