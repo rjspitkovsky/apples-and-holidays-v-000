@@ -62,7 +62,6 @@ holiday_hash.each do |season, holidays|
     holidays.each do |holiday, stuff|
         holiday.to_s.split.each do |word|
           new_holiday = word.capitalize!
-          new_holiday = new_holiday.join
         end
 
 
